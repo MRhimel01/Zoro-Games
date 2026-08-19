@@ -1,0 +1,41 @@
+/* logoutcontainer.css */
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+}
+
+
+
+/* Logout Button Hover Effect */
+.btn-logout:hover {
+    background-color: #d43f3f;
+}
+
+/* Logout Button Active Effect */
+.btn-logout:active {
+    background-color: #a33838;
+}
+
+/* Logout Container with Black Background */
+.logout-container {
+    text-align: center;
+    background-color: black; /* Set background color to black */
+    color: white; /* Text color set to white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+   
+    bottom: 40px; /* Distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+}

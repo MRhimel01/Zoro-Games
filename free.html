@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="freecss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="freecss.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+      <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+        <h3 style="color: rgb(46, 170, 228)"><a class="nav-link" href="index.html">ZORO GAME STORE </a></h3>
+        <ul class="navbar-nav">
+    
+          <li class="nav-item">
+            <a class="nav-link" href="Discover.html"><b style="color: #ffffff;">Discover</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newgame.html"><b style="color: #ffffff;">New Game</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b style="color: #ffffff;">Treanding Game</b> </a>
+          </li>
+    
+        </ul>
+    
+    
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Browse Your Game!" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+        </div>
+      </nav>
+</head>
+
+<body>
+
+    <div class="container">
+      <h1 class="text-center">Zoro Game Store Giveaways</h1>
+  
+      <!-- Weekly Giveaway -->
+      <div class="giveaway-card">
+        <h2 class="section-title">Weekly Giveaway</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/giveaway.png" alt="Weekly Game Giveaway" id="weeklyImage">
+          </div>
+          <div class="col-md-6">
+            <h3 id="weeklyGameTitle">Red Dead Redemption 2</h3>
+            <p id="weeklyGameDescription">Developed by the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in America's unforgiving heartland.</p>
+            <button class="btn btn-primary">Claim Your Game</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Monthly Giveaway -->
+      <div class="giveaway-card">
+        <h2 class="section-title">Monthly Giveaway</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/giveaway2.png" alt="Monthly Game Giveaway" id="monthlyImage">
+          </div>
+          <div class="col-md-6">
+            <h3 id="monthlyGameTitle">Forza Horizon 5</h3>
+            <p id="monthlyGameDescription">Take on awe-inspiring weather events such as towering dust storms and intense tropical storms as Mexico's unique, dynamic seasons change the world every week.</p>
+            <button class="btn btn-primary">Claim Your Game</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Discounts Section -->
+      <div class="discount-section">
+        <h2 class="section-title">Current Discounts</h2>
+        <p>We’re offering amazing discounts on your favorite games! Get up to 50% off this month.</p>
+        <div class="discount-code">
+          <p>Use code: <span style="color: #f9f9f9;">ZORO50</span> to get 50% off!</p>
+        </div>
+      </div>
+  
+    </div>
+  
+    <footer class="footer">
+      &copy; 2024 Zoro Game Store. All rights reserved.
+    </footer>
+  
+    <!-- JavaScript -->
+    <script>
+      // Dynamically set weekly and monthly game details from query parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const weeklyGameName = urlParams.get('weeklyGame');
+      const weeklyGameDescription = urlParams.get('weeklyDescription');
+      const weeklyGameImage = urlParams.get('weeklyImage');
+  
+      const monthlyGameName = urlParams.get('monthlyGame');
+      const monthlyGameDescription = urlParams.get('monthlyDescription');
+      const monthlyGameImage = urlParams.get('monthlyImage');
+  
+      if (weeklyGameName) {
+        document.getElementById('weeklyGameTitle').innerText = `Weekly Giveaway: ${weeklyGameName}`;
+      }
+  
+      if (weeklyGameDescription) {
+        document.getElementById('weeklyGameDescription').innerText = weeklyGameDescription;
+      }
+  
+      if (weeklyGameImage) {
+        document.getElementById('weeklyImage').src = weeklyGameImage;
+      }
+  
+      if (monthlyGameName) {
+        document.getElementById('monthlyGameTitle').innerText = `Monthly Giveaway: ${monthlyGameName}`;
+      }
+  
+      if (monthlyGameDescription) {
+        document.getElementById('monthlyGameDescription').innerText = monthlyGameDescription;
+      }
+  
+      if (monthlyGameImage) {
+        document.getElementById('monthlyImage').src = monthlyGameImage;
+      }
+    </script>
+  
+  </body>

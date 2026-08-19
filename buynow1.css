@@ -1,0 +1,65 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.checkout-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #6d88e0;
+}
+
+.form-control:focus {
+  border-color: #6d88e0;
+  box-shadow: 0 0 0 0.2rem rgba(109, 136, 224, 0.25);
+}
+
+.btn-primary {
+  background-color: #6d88e0;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #5a76c8;
+}
+
+.checkout-summary {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.checkout-summary img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.payment-methods img {
+  max-width: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.tooltip-inner {
+  background-color: #6d88e0;
+}
+
+.tooltip-arrow {
+  color: #6d88e0;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
